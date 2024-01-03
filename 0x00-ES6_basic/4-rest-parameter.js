@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 export default function returnHowManyArguments(...other) {
-	return lenght.other;
+	return other.length;
 }

@@ -6,7 +6,7 @@ const port = '1245';
 const app = http.createServer((_, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.write(Buffer.from('Hello Holberton School!'));
+  res.write(Buffer.from('Hello Holberton School!\n'));
 });
 
 app.listen(port, hostname, () => {

@@ -6,11 +6,11 @@ const port = '1245';
 const app = http.createServer((_, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.write(Buffer.from('Hello Holberton School!\n'));
+  res.write(Buffer.from('Hello Holberton School!'));
 });
 
 app.listen(port, hostname, () => {
-  console.log(`Server listening at -> http://${hostname}:${port}/`);
+  process.stdout.write(`Server listening at -> http://${hostname}:${port}\n`);
 });
 
 module.exports = app;

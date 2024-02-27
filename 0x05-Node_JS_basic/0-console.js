@@ -1,5 +1,3 @@
-// displays message
-
 function displayMessage(message) {
   console.log(message);
 }

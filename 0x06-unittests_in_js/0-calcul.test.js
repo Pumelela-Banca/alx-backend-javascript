@@ -10,6 +10,9 @@ describe('calculateNumber', () => {
     assert.strictEqual(calculateNumber(2.3, 1.8), 4);
   });
   it('adds two numbers (negative integers)', () => {
-    assert.strictEqual(calculateNumber(-2, -2), -4);
+    assert.strictEqual(calculateNumber(-2.0, -2.0), -4);
+  });
+  it('adds two numbers (negative and positive)', () => {
+    assert.strictEqual(calculateNumber(-2.0, 2.0), 0);
   });
 });

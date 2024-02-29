@@ -1,0 +1,19 @@
+{
+  "name": "0x06-unittests_in_js",
+  "version": "1.0.0",
+  "description": "Exploring  testing methords for NodeJS",
+  "main": "0-calcul.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pumelela-Banca/alx-backend-javascript.git"
+  },
+  "author": "Pumelela Banca",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pumelela-Banca/alx-backend-javascript/issues"
+  },
+  "homepage": "https://github.com/Pumelela-Banca/alx-backend-javascript#readme"
+}

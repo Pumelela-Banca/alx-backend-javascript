@@ -12,8 +12,11 @@ describe('calculateNumber', () => {
   it('adds two numbers (negative integers)', () => {
     assert.strictEqual(calculateNumber(-2.0, -2.0), -4);
   });
-  it('adds two numbers (negative and positive)', () => {
+  it('adds two floats (negative and positive)', () => {
     assert.strictEqual(calculateNumber(-2.0, 2.0), 0);
+    assert.strictEqual(calculateNumber(1, 3.8), 5);
+    assert.strictEqual(calculateNumber(2.5, 4.6), 8);
+    assert.strictEqual(calculateNumber(-5.9, -6), -12);
   });
 
   it('should check arguments',  () => {

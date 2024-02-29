@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Pumelela-Banca/alx-backend-javascript/issues"
   },
-  "homepage": "https://github.com/Pumelela-Banca/alx-backend-javascript#readme"
+  "homepage": "https://github.com/Pumelela-Banca/alx-backend-javascript#readme",
+  "devDependencies": {
+    "chai": "^5.1.0",
+    "mocha": "^10.3.0"
+  }
 }

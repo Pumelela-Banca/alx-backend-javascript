@@ -15,4 +15,9 @@ describe('calculateNumber', () => {
   it('adds two numbers (negative and positive)', () => {
     assert.strictEqual(calculateNumber(-2.0, 2.0), 0);
   });
+
+  it('should check arguments',  () => {
+    assert.strictEqual(calculateNumber(), NaN);
+    assert.strictEqual(calculateNumber(3), NaN);
+  });
 });

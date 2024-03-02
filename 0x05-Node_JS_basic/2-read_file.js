@@ -16,7 +16,7 @@ function countStudents(path) {
     }
     if (fields) {
       for (const field in fields) {
-        if (fields.hasOwnProperty(field)) {
+        if (fields.hasOwnProperty(field).call(fields, field)) {
           console.log(`Number of students in ${field}: ${fields[field].length}. List: ${fields[field].join(', ')}`);
         }
       }

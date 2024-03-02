@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-function countStudents (path) {
+function countStudents(path) {
   try {
     const data = fs.readFileSync(path, 'utf8');
     const lines = data.split('\n');
@@ -16,8 +16,10 @@ function countStudents (path) {
     }
     if (fields) {
       for (const field in fields) {
-        console.log(`Number of students in ${field}: ${fields[field].length}. List: ${fields[field].join(', ')}`);
-    }
+        if (fields.hasOwnProperty(field)) {
+          console.log(`Number of students in ${field}: ${fields[field].length}. List: ${fields[field].join(', ')}`);
+        }
+      }
     }
   } catch (err) {
     throw new Error('Cannot load the database');
